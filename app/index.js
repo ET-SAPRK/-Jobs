@@ -20,9 +20,9 @@ const Home = () => {
         headerLeft: () => (
             <ScreenHeaderBtn menu={icons.menu} dimension='60%' />
           ),
-          headerRight: () => (
-            <ScreenHeaderBtn iconUrl={images.profile} dimension='100%' />
-          ),
+        //   headerRight: () => (
+        //     <ScreenHeaderBtn iconUrl={images.profile} dimension='100%' />
+        //   ),
           headerTitle: "",
      }} />
       <ScrollView showsVerticalScrollIndicator={false}>
