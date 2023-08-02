@@ -4,7 +4,14 @@
     "web": {
       "bundler": "metro"
     },
-    "name": "jobsift",
-    "slug": "jobsift"
+    "name": "Hulu Jobs",
+    "slug": "huluJobs",
+    "version": "1.0.0",
+    "icon": "./assets/logo.jpg",
+    "splash": {
+      "image": "./assets/logo.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    }
   }
 }
