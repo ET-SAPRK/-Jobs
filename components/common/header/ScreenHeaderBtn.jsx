@@ -1,15 +1,17 @@
-import React from 'react'
-import { View, Text, Image } from 'react-native'
-import { TouchableOpacity } from 'react-native-gesture-handler'
-import styles from './screenheader.style'
-import { Entypo } from '@expo/vector-icons';
+import { Image, TouchableOpacity } from "react-native";
 
-const ScreenHeaderBtn = ({ menu}) => {
+import styles from "./screenheader.style";
+
+const ScreenHeaderBtn = ({ iconUrl, dimension, handlePress }) => {
   return (
-    <TouchableOpacity>
-    <Entypo name="menu" size={35} color="black" />
+    <TouchableOpacity style={styles.btnContainer} onPress={handlePress}>
+      <Image
+        source={iconUrl}
+        resizeMode='cover'
+        style={styles.btnImg(dimension)}
+      />
     </TouchableOpacity>
-  )
-}
+  );
+};
 
-export default ScreenHeaderBtn
+export default ScreenHeaderBtn;
